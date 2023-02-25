@@ -59,6 +59,7 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 2px 3px 2px #979797;
+    margin-bottom: 15px;
 }
 
 .featured-products .title h1 {
@@ -73,12 +74,18 @@ body{
     background-color:#FFFFFF;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 2px 3px 2px #d5d5d5;
 }
 
 .featured-products .product-item .product-image {
     margin-top: 15px;
     margin-bottom: 20px;
+}
+
+.featured-products .product-item .product-info {
+    min-height: 90px;
 }
 
 .featured-products .product-item .product-info h2 {
@@ -150,9 +157,56 @@ footer h4{
     text-decoration: none;
 }
 
+.btn-whatsapp-mobile {
+    display: none;
+}
+
 @media (max-width: 768px) {
+
+    .btn-whatsapp-mobile {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: #0b3000;
+        text-align: center;
+        background-color: rgb(38, 161, 1);
+        display: block !important;
+        text-shadow: 1px 1px 1px #30cb00;
+        font-size: 18px;
+    }
+
+
+    .btn-whatsapp-pulse {
+        display: none !important;
+    }
+
+    .main .logo {
+        text-align: center;
+    }
+
+    .main .info {
+        display: none !important;
+    }
+
+    .menu .navbar-toggler { margin: auto; }
+
     .menu .navbar-nav .nav-item:not(:last-child) {
         border-right: none;
+    }
+
+    .menu .navbar-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .menu .navbar-nav .nav-item {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #DAAA00;
+        padding-top: 5px;
+        text-align: center;
     }
 }
 
